@@ -1,11 +1,16 @@
 markovify
-nltk
+matplotlib
 numpy
 pandas
+pytest
 regex
+scipy
 seaborn
-wrapt
 spacy
+tensorflow
+tensorflow_hub
+wrapt
+
 
 
 
