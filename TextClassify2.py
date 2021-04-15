@@ -20,15 +20,17 @@ def train_test_split(data, train_size):
     test = data[train_size:]
     return train, test
 
+#raw text data split up and in text form (categories and text)
 train_cat, test_cat = train_test_split(data.iloc[:,1], train_size)  # category is second column
 train_text, test_text = train_test_split(data.iloc[:,0], train_size)  # text is first column
 
+#processing of raw text data
 tokenize = Tokenizer(num_words=max_words, char_level=False)
 tokenize.fit_on_texts(train_text) # fit tokenizer to our training text data
 x_train = tokenize.texts_to_matrix(train_text)
 x_test = tokenize.texts_to_matrix(test_text)
 
-# Use sklearn utility to convert label strings to numbered index
+# Use sklearn utility to convert label strings to numbered index (one hot encoding)
 encoder = LabelEncoder()
 encoder.fit(train_cat)
 y_train = encoder.transform(train_cat)

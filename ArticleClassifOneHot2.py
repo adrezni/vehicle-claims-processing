@@ -60,7 +60,7 @@ drop_ratio = 0.5
 model = models.Sequential()
 model.add(layers.Dense(512, input_shape=(max_words,)))
 model.add(layers.Activation('relu'))
-# model.add(layers.Dropout(drop_ratio))
+# model.add(layers.Dropout(drop_ratio))  #drop ratio adds noise to the gradient descent so that it will converge more smoothly
 model.add(layers.Dense(num_classes))
 model.add(layers.Activation('softmax'))
 
