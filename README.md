@@ -1,4 +1,4 @@
-# claims-notebooks
+# vehicle-claims-processing notebooks
 
 These notebooks accompany our tutorial _Vehicle Claims Processing:  Intelligent Applications on OpenShift 4_.  
 
@@ -29,6 +29,6 @@ If you want to experiment with the data generator, you'll want to use your own c
 
 1.  Clone this repository:  `git clone https://github.com/adrezni/vehicle-claims-processing`
     - tip:  if you don't have `git` installed, you can also [download an archive of this repository](https://github.com/willb/fraud-notebooks/archive/develop.zip)
-2.  Change to this repository's directory:  `cd claims-notebooks`
-4.  Run the notebooks:  `pipenv run jupyter notebook`
+2.  Change to this repository's directory:  `cd vehicle-claims-processing`
+4.  Run the notebooks
 
